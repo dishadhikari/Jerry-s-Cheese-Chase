@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Jerry's Cheese Chase </title>
+        <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+        <style>
+            body
+            {
+                background-image:url('static/cheesebackground.jpg');
+                background-size:cover;
+                background-position:center;
+                padding:0;
+                margin:0;
+            }
+            h1
+            {
+                color:red;
+                text-align:center;
+                font-family:'yellowtail',cursive;
+                font-weight:bold;
+                font-size: 120px;
+                padding:0;
+                margin:0;
+                text-decoration: underline
+            }
+            .centerimage
+            {
+                display:block;
+                margin-left:550px;
+                margin-right:auto;
+                position:center;
+                width:600px;
+                border:20px solid red;
+            }
+            .intro
+            {
+                font-size:35px;
+                font-family:'Yellowtail',cursive;
+                font-weight:bold;
+                border-right:20px red;
+                margin-left:100px;
+                white-space:nowrap;
+                overflow:hidden;
+                width:0;
+                animation:typing 4s steps(30,end)forwards,blink 0.7s step-end infinite;
+            }
+            @keyframes typing
+            {
+                from{width:0}
+                to{width:100%}
+            }
+            @keyframes blink
+            {
+                50%{border-color:transparent;}
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Jerry's Cheese Chase</h1>
+        <div class="intro" style="text-align:center">
+            TOM's on the run again! <br>
+            YOUR MISSION--Get the Grand Cheese in less than 1 minute and win the game!<br>
+            But wait...beware of the RATTRAPS and POISONOUS WALLS, you might lose a live<br>
+            So, eat the baby cheeses and get to the DADDY CHEESE!<br>
+        </div>
+    
+        <img src="static/tomandjerry.jpg" class="centerimage" onclick="runGame()"> 
+        <script>
+            function runGame() {
+                fetch('/run-game')
+                    .then(() => alert("Launching game..."))
+                    .catch(err => alert("Failed to launch game. Make sure the server is running."));
+            }
+        </script>
+    </body>
+</html>
