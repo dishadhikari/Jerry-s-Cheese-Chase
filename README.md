@@ -2,12 +2,15 @@
 A 3D web-based game where Jerry chases the cheese while avoiding Tom and the poisonous walls of the rattrap.<br>
 You are Jerry. Get to the Daddy Cheese in less than 30 seconds to win the game, but beware of the poisonous walls, rattraps and Tom waiting for you near the Daddy Cheese.<br>
 <br>
-<strong> Demo Video</strong>
+<strong> Demo Video</strong><br>
 https://www.youtube.com/watch?v=iIDA102VYcM<br>
 <br>
 <strong> Installation</strong><br>
 1. Python extension in Visual Studio Code/Python IDLE<br>
 2. Ursina Engine <a href=https://www.ursinaengine.org/installation.html>(installation guide)</a><br>
+<br>
+<strong>Gameplay</strong><br>
+
 <strong>Project Structure</strong><br>
 <pre>
 ├── OSDHack              # Assets folder
