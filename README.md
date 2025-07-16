@@ -39,6 +39,6 @@ Up, Down. Left, Right keys for moving throught the maze<br>
 <strong> Contributing</strong>-<br>
 Pull requests are welcome. For major changes, open an issue.<br>
 <br>
-Made by- <br>
+<strong>Made by- </strong><br>
 @dishadhikari<br>
 @AkshatPorwal123<br>
