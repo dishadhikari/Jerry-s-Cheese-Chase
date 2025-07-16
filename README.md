@@ -10,13 +10,26 @@ https://www.youtube.com/watch?v=iIDA102VYcM<br>
 2. Ursina Engine <a href=https://www.ursinaengine.org/installation.html>(installation guide)</a><br>
 <br>
 <strong>Gameplay</strong><br>
-
+<strong>Controls</strong><br>
+Up, Down. Left, Right keys for moving throught the maze<br>
+If you hit a trap, you lose a point<br>
+If you pass through a cheese, you gain a point<br>
+If you meet Tom, you lose the game<br>
+If you are not able to reach the Daddy Cheese in not more than 30 seconds, you lose the game <br>
+If you lose all your lives and are left with 0 lives, you lose the game<br>
+You win the game when you reach the Daddy Cheese<br>
 <strong>Project Structure</strong><br>
 <pre>
-├── OSDHack              # Assets folder
-│   ├── textures..(.png) # PNG images (ufo, asteroids, etc.)
-│   └── sounds..(.wav)   # WAV files (shooting, explosions)
-└── README.md            # This file
+├── main.py                           # Python source code
+├── index.html                        # HTML Code
+├── server.py                         # Python Flask code
+├── style.css                         # CSS code
+├── mazefinal.glb                     # 3D maze made in TinkerCAD
+├── assets                            # Assets folder
+│   ├── textures.. (.jpg)             # JPG images (Tom and Jerry picture, cheese background)
+│   └── sounds..   (.mp3)             # WAV files (game win, lose; live gain,lost)
+│   └── 3D models..(.obj,.mtl)        # STL files (Tom, Jerry, trap, cheeses)
+└── README.md                         # This file
 </pre>
 <strong>Tech Stack used- </strong><br>
 1. Ursina Engine (of Python)<br>
